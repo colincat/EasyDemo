@@ -88,7 +88,7 @@
     NSLog (@"created exporter. supportedFileTypes: %@", exporter.supportedFileTypes);
     exporter.outputFileType = AVFileTypeAppleM4A;
     
-    NSString *fileName =  [mediaItem.podcastTitle stringByAppendingString:@".m4a"];
+    NSString *fileName =  [mediaItem.title stringByAppendingString:@".m4a"];
   
     NSString *filePath = [self.sandboxPath
                             stringByAppendingPathComponent:fileName];

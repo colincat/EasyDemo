@@ -46,7 +46,14 @@
 //关闭web服务
 -(void)stopWebSever{
     
-    [_webServer stop];
+    if (_webServer) {
+        
+        [_webServer stop];
+        
+        _webServer = nil;
+    }
+    
+  
 }
 
 @end
